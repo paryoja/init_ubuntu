@@ -14,6 +14,7 @@ Plugin 'google/vim-maktaba'
 Plugin 'google/vim-glaive'
 Plugin 'google/vim-codefmt'
 
+Plugin 'altercation/vim-colors-solarized'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -48,3 +49,8 @@ filetype plugin indent on    " required
 set nu
 set hls
 set ruler
+
+syntax enable
+set background=dark
+colorscheme solarized
+
