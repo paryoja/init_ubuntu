@@ -18,3 +18,5 @@ cp ./_vimrc ~/.vimrc
 vim +PluginInstall +qall
 
 echo export TERM=screen >> ~/.bashrc
+
+sudo usermod -aG docker $USER
