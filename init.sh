@@ -17,4 +17,4 @@ cp ./_vimrc ~/.vimrc
 
 vim +PluginInstall +qall
 
-echo export TERM=screen >> ~/.bashrc`
+echo export TERM=screen >> ~/.bashrc
