@@ -20,3 +20,4 @@ vim +PluginInstall +qall
 echo export TERM=screen >> ~/.bashrc
 
 sudo usermod -aG docker $USER
+sudo systemctl docker restart
