@@ -25,5 +25,5 @@ sudo systemctl restart docker
 sudo mkdir /data
 sudo mkdir /image
 
-sudo cp fstab /etc/fstab
-sudo cp docker.service /lib/systemd/system/docker.service
+#sudo cp fstab /etc/fstab
+#sudo cp docker.service /lib/systemd/system/docker.service
