@@ -25,5 +25,7 @@ sudo systemctl restart docker
 sudo mkdir /data
 sudo mkdir /image
 
+sudo timedatectl set-timezone 'Asia/Seoul'
+
 #sudo cp fstab /etc/fstab
 #sudo cp docker.service /lib/systemd/system/docker.service
