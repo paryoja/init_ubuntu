@@ -34,6 +34,9 @@ Plugin 'altercation/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+
+call glaive#Install()
+
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -53,4 +56,19 @@ set ruler
 syntax enable
 set background=dark
 " colorscheme solarized
+
+au BufNewFile,BufRead *.yaml,*.yml set et ts=2 sw=2
+
+augroup autoformat_settings
+  autocmd FileType bzl AutoFormatBuffer buildifier
+  autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format
+  autocmd FileType dart AutoFormatBuffer dartfmt
+  autocmd FileType go AutoFormatBuffer gofmt
+  autocmd FileType gn AutoFormatBuffer gn
+  autocmd FileType html,css,sass,scss,less,json AutoFormatBuffer js-beautify
+  autocmd FileType java AutoFormatBuffer google-java-format
+  "autocmd FileType python AutoFormatBuffer yapf
+  autocmd FileType python AutoFormatBuffer autopep8
+  autocmd FileType vue AutoFormatBuffer prettier
+augroup END
 
