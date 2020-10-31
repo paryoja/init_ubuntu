@@ -33,4 +33,7 @@ sudo python3 -m pip install autopep8
 #sudo cp fstab /etc/fstab
 #sudo cp docker.service /lib/systemd/system/docker.service
 
-sudo docker network create -d bridge mybridge
+#sudo docker network create -d bridge mybridge
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
